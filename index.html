@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Mini E‑Learning</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<a href="#/" class="brand">Mini E‑Learning</a>
+			<nav class="nav">
+				<a href="#/" class="nav-link">Home</a>
+			</nav>
+			<div id="auth-area"></div>
+		</div>
+	</header>
+
+	<main class="container">
+		<div id="app"></div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<span>&copy;2025.All rights reserved.</span>
+		</div>
+	</footer>
+
+	<!-- Auth Modal -->
+	<div id="auth-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 id="auth-title">Sign in / Sign up</h3>
+				<button class="btn close-btn" id="auth-close" aria-label="Close">&times;</button>
+			</div>
+			<form id="auth-form" class="form">
+				<div class="field">
+					<label for="auth-name">Name</label>
+					<input id="auth-name" type="text" class="input" placeholder="Your name" required />
+				</div>
+				<div class="field">
+					<label for="auth-email">Email (optional)</label>
+					<input id="auth-email" type="email" class="input" placeholder="you@example.com" />
+				</div>
+				<div class="actions">
+					<button type="submit" class="btn primary" id="auth-submit">Continue</button>
+					<button type="button" class="btn" id="auth-cancel">Cancel</button>
+				</div>
+				<div class="meta" style="margin-top:8px;">Prototype only—no real authentication.</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="/script.js"></script>
+</body>
+</html>
